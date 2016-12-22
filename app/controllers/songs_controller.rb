@@ -28,9 +28,11 @@ class SongsController < ApplicationController
     def edit
         @song = Song.find(params[:id]);
     end
-
-
+ 
     def destroy
+        @song = Song.find(params[:id])
+        @song.delete
+        redirect_to '/songs'
     end
 
 
