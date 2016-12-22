@@ -30,6 +30,7 @@
                         <th>Song</th> 
                         <th>Artist</th> 
                         <th>Album</th>
+                        <th>Edit</th>
                     </tr> 
                 </thead>
                 <tbody>
@@ -40,6 +41,7 @@
                                 <td><%= song.title %></td>
                                 <td><%= song.album %></td>
                                 <td><%= song.artist %></td>
+                                <td><%= link_to 'Edit', edit_song_path(song) %></td>
                             </tr>
                         <% end %>
                     <% end %>

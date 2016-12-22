@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1><%= @song.title %></h1>
+            <table class="table table-bordered">
+                <thead> 
+                    <tr>
+                        <th><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></th> 
+                        <th>Song</th> 
+                        <th>Artist</th> 
+                        <th>Album</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></td>
+                        <td><%= @song.title %></td>
+                        <td><%= @song.album %></td>
+                        <td><%= @song.artist %></td>
+                        <td><%= link_to 'Edit', edit_song_path(@song) %></td>
+                        <td><%= link_to 'Delete', song_path(@song), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
