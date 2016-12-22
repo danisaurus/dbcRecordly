@@ -21,8 +21,8 @@ Schema Changes:
 1. With more time the biggest change I would make is to the schema, since currently users can only add songs, and theres no way to search or filter by song, album, artist, etc.
 2. Off the top of my head, a more ideal schema would look something like this:
 
-![alt text](https://www.dropbox.com/s/b1ivnowrqgv26q6/Screen%20Shot%202016-12-22%20at%2010.43.34%20AM.png?dl=0
- "Schema")
+![Image of Schema]
+(https://www.dropbox.com/s/b1ivnowrqgv26q6/Screen%20Shot%202016-12-22%20at%2010.43.34%20AM.png?dl=0)
 
 3. By changing the schema a user can now add a song or album to their list, and will be able to sort by songs, albums, or artists. 
 4. I'd love to include some kind of csv upload to this application where users can just upload a csv instead of having to manually add each individual song. Also, if a user wants to add an album or a song, i'd like to make the program able to look up if it already exists in our database using some kind of search/autofill. If the song already exists, then in the controller it would just add the song to their specific list, but not to the db. 
