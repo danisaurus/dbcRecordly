@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/songs">
+        Recordly
+      </a>
+      <% if current_user %>
+       <a href="/logout" class="btn btn-default margin-top-md">Logout</a>
+      <% end %>
+    </div>
+  </div>
+</nav>

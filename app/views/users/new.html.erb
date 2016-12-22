@@ -1,11 +1,26 @@
-<h1>Signup!</h1>
+<div class="container">
+  <h1>Signup!</h1>
 
-<%= form_for :user, url: '/users' do |f| %>
+  <%= form_for :user, url: '/users', :html => {:class => 'form-inline'} do |f| %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+     <div class="form-group">
+        <label for="name">Name:</label>
+        <%= f.text_field :name, :class => 'form-control', :id => 'name' %></p>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <%= f.text_field :email, :class => 'form-control', :id => 'email' %></p>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <%= f.password_field :password, :class => 'form-control', :id => 'password' %></p>
+    </div>
+    <div class="form-group">
+        <label for="passwordConfirmation">Password Confirmation:</label>
+        <%= f.password_field :password_confirmation, :class => 'form-control', :id => 'passwordConfirmation' %></p>
+    </div>
+    <%= f.submit "Submit", :class => 'btn btn-default' %>
 
-<% end %>
+  <% end %>
+  <a href="/login">Login</a>
+</div>
