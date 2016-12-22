@@ -35,6 +35,7 @@ UI Changes:
 5. My app currently has no error reporting, so if someone incorrectly logs in, it doesn't tell them something was wrong, or if a song for some reason doesn't save, it doesn't report that either. I would like to add in some validation for songs, and for emails to make sure that if an email already exists, they can't try to make another account, or if someone tries to add a song without including an artist or album, it won't add, and the error displays for the user.
 6. I would also make favorites actually work. I'd change the heart to not be filled in, and when someone favorites it, make an ajax call to add it to their favorites, and just change the color of the heart.
 7. I would need to add a favorites view, probably sortable by a number of things (artist, album, alphabetical, date added, date favorited?)
+8. I would also choose a front end javascript framework. Either angular2 or react.js 
 
 
 
