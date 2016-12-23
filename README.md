@@ -36,8 +36,11 @@ UI Changes:
 6. I would also make favorites actually work. I'd change the heart to not be filled in, and when someone favorites it, make an ajax call to add it to their favorites, and just change the color of the heart.
 7. I would need to add a favorites view, probably sortable by a number of things (artist, album, alphabetical, date added, date favorited?)
 8. I would also choose a front end javascript framework. Either angular2 or react.js 
+9. I think recordly would be a great project to use more atomic design in and modularize the pieces for reusability.
 
+Miscellaneous:
 
+1. if I were finishing this project, I would probably also download bootstrap to the project only in terms of the things I needed. For speed's sake I threw the whole bootstrap css file in, but I would probably just use the individual scss files that I would want to work on for my individual modules. 
 
 
 
